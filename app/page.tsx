@@ -33,16 +33,13 @@ export default function Home() {
             <Link href="#security" className="text-sm font-medium hover:text-primary">
               Security
             </Link>
-            <Link href="/dashboard" className="text-sm font-medium hover:text-primary">
-              Dashboard
-            </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Button variant="ghost" asChild>
-              <Link href="/login">Log in</Link>
+              <Link href="#login">Log in</Link>
             </Button>
             <Button asChild>
-              <Link href="/signup">Sign up</Link>
+              <Link href="#signup">Sign up</Link>
             </Button>
           </div>
         </div>
@@ -161,22 +158,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <Link href="/document-review" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Document Review</CardTitle>
-                      <CardDescription>AI-powered legal document analysis</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        Automatically extract key clauses, identify risks, and get AI-powered recommendations.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Document Review</CardTitle>
+                    <CardDescription>AI-powered legal document analysis</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <FileText className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Automatically extract key clauses, identify risks, and get AI-powered recommendations.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
 
               <motion.div
@@ -185,22 +180,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <Link href="/case-search" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Case Law Search</CardTitle>
-                      <CardDescription>Find relevant legal precedents</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <Search className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        Search and analyze case law with AI-powered insights and relevance scoring.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Case Law Search</CardTitle>
+                    <CardDescription>Find relevant legal precedents</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <Search className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Search and analyze case law with AI-powered insights and relevance scoring.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
 
               <motion.div
@@ -209,22 +202,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Link href="/predictive-analysis" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Predictive Analysis</CardTitle>
-                      <CardDescription>AI-powered legal strategy</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <BarChart3 className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        Get AI-driven strategy suggestions and outcome predictions based on legal patterns.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Predictive Analysis</CardTitle>
+                    <CardDescription>AI-powered legal strategy</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <BarChart3 className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Get AI-driven strategy suggestions and outcome predictions based on legal patterns.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
 
               <motion.div
@@ -233,22 +224,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <Link href="/legal-chatbot" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Legal Chatbot</CardTitle>
-                      <CardDescription>AI assistant for legal questions</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <MessageSquare className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        Get instant answers to legal questions and document-specific insights.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Legal Chatbot</CardTitle>
+                    <CardDescription>AI assistant for legal questions</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <MessageSquare className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Get instant answers to legal questions and document-specific insights.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
 
               <motion.div
@@ -257,22 +246,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                <Link href="/collaboration" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Team Collaboration</CardTitle>
-                      <CardDescription>Multi-user legal workspace</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <Users className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        Collaborate with your team on legal research and document analysis in real-time.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Team Collaboration</CardTitle>
+                    <CardDescription>Multi-user legal workspace</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <Users className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Collaborate with your team on legal research and document analysis in real-time.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
 
               <motion.div
@@ -281,22 +268,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <Link href="/security" className="block h-full">
-                  <Card className="h-full hover:shadow-md transition-shadow">
-                    <CardHeader>
-                      <CardTitle>Security & Compliance</CardTitle>
-                      <CardDescription>Legal-grade data protection</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
-                        <Shield className="h-6 w-6 text-primary" />
-                      </div>
-                      <p className="text-muted-foreground">
-                        End-to-end encryption, GDPR compliance, and secure cloud storage for legal documents.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <Card className="h-full hover:shadow-md transition-shadow">
+                  <CardHeader>
+                    <CardTitle>Security & Compliance</CardTitle>
+                    <CardDescription>Legal-grade data protection</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="mb-4 rounded-full bg-primary/10 p-3 w-fit">
+                      <Shield className="h-6 w-6 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      End-to-end encryption, GDPR compliance, and secure cloud storage for legal documents.
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
             </div>
           </div>
